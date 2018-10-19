@@ -19,14 +19,7 @@ const targets = [
     url: 'nghttp2.org/httpbin/stream/0'
   },
   {
-    url: 'seblor.fr'
-  },
-  {
-    url: 'www.wikipedia.org'
-  },
-  {
-    url: 'vps.seblor.fr',
-    protocol: 'http'
+    url: 'example.com'
   }
 ]
 
@@ -44,8 +37,7 @@ export default {
   beforeRouteLeave (to, from, next) {
     next()
   },
-  mounted: function () {
-  },
+  mounted: function () {},
   methods: {
     removeComponent: function (index) {
       targets.splice(index, 1)
